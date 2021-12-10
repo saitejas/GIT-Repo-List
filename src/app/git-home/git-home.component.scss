@@ -21,3 +21,13 @@ ngb-pagination ::ng-deep .page-item.active .page-link {
   background-color: #428bca;
   color: white !important;
 }
+
+.exception-message {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.search-container {
+  margin: 2rem;
+}

@@ -1,0 +1,16 @@
+<div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-12 col-lg-7 col-md-7">
+<!--        <div>-->
+<!--            <input placeholder="Search User" class="search-input width-100" type="text" name="search" (keyup.enter)="emitSearchString()" [(ngModel)]="searchString" autocomplete="off">-->
+<!--            <button (click)="emitSearchString()" type="submit" id="searchsubmit" class="search-form">-->
+<!--                <fa-icon [icon]="faSearch"></fa-icon>-->
+<!--            </button>-->
+<!--        </div>-->
+        <div class="search width-100">
+            <span (click)="emitSearchString()" class="fa-search">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </span>
+            <input placeholder="Search User" class="search-input width-100" type="text" name="search" (keyup.enter)="emitSearchString()" [(ngModel)]="searchString" autocomplete="off">
+        </div>
+    </div>
+</div>

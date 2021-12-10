@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+        <div style="display: flex;align-items: center;">
+            <div>
+                <img src="assets/img/loading_blue.gif" height="50"/>
+            </div><br>
+            <div *ngIf="data && data.message" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+                <div class="progress-message">{{data.message}}</div>
+                <!--                <div [ngStyle]="{'left': progress + '%'}" class="progress-message">{{data.message}}</div>-->
+                <!--                <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>-->
+            </div>
+        </div>
+    </div>
+</div>

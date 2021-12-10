@@ -10,12 +10,25 @@
         </li>
         <li>
             <div class="basic-info">
-                <p class="user-name">{{userData['name']}}</p>
+                <p class="user-name">
+                    <span *ngIf="userData.hasOwnProperty('name') && userData['name'] && userData['name'] !== ''; else login">
+                                            {{userData['name']}}
+                    </span>
+                    <ng-template #login>
+                        {{userData['login']}}
+                    </ng-template>
+                </p>
                 <p>{{userData['bio']}}</p>
-                <p><span class="icon-spacing"><fa-icon [icon]="faMapMarker"></fa-icon></span><span>{{userData['location']}}</span></p>
-                <p *ngIf="userData.hasOwnProperty('twitter_username')"><span class="twitter-username">Twitter Username: </span>{{userData['twitter_username']}}</p>
-                <p><span class="icon-spacing"><fa-icon [icon]="faLink"></fa-icon></span><span>{{userData['html_url']}}</span></p>
+                <p *ngIf="userData.hasOwnProperty('location') && userData['location'] && userData['location'] !== ''"><span class="icon-spacing"><fa-icon [icon]="faMapMarker"></fa-icon></span><span>{{userData['location']}}</span></p>
+                <p *ngIf="userData.hasOwnProperty('twitter_username') && userData['twitter_username'] && userData['twitter_username'] !== ''"><span class="twitter-username">Twitter Username: </span>{{userData['twitter_username']}}</p>
+                <p *ngIf="userData.hasOwnProperty('html_url') && userData['html_url'] && userData['html_url'] !== ''"><span class="icon-spacing"><fa-icon [icon]="faLink"></fa-icon></span><span>{{userData['html_url']}}</span></p>
             </div>
         </li>
+<!--        <li>-->
+<!--            <p><span>Followers: </span> {{userData['followers']}}</p>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <p><span>Following: </span> {{userData['following']}}</p>-->
+<!--        </li>-->
     </ul>
 </div>

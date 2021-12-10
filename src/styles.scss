@@ -5,3 +5,40 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+.width-100 {
+  width: 100% !important;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.search {display: inline-block;}
+
+.search input {
+  height: 3rem;
+
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  //box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 10px;}
+.search .fa-search {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.search .fa-search {left: auto; right: 10px;}
+
+.search-input {
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
