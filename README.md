@@ -1,6 +1,14 @@
-# GitRep
+# GitRepoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+
+#### (Assumptions)
+
+The newer and older navigation buttons were not provided under the paginator since the functionality was redundant.
+
+## Installation
+
+Clone or download the project and run `npm install` to install all the dependencies for the project.
 
 ## Development server
 
