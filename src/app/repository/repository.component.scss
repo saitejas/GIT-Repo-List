@@ -1,0 +1,29 @@
+.repo-container {
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 0.7rem;
+  margin-bottom: 25px;
+}
+
+.repo-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #458fce;
+}
+
+.topic-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.topic {
+  margin-right: 7px;
+  border: 1px solid #458fce;
+  color: white;
+  font-weight: bolder;
+  background-color: #458fce;
+  padding: 2px 8px;
+  border-radius: 3px;
+}

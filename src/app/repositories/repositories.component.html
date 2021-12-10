@@ -1,3 +1,7 @@
 <div *ngIf="repositories" class="repositories-container">
-
+    <div class="row">
+        <div *ngFor="let repo of repositories" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <app-repository [repository]="repo"></app-repository>
+        </div>
+    </div>
 </div>

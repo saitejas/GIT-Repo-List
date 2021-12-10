@@ -1,1 +1,13 @@
-<p>repository works!</p>
+<div class="repo-container">
+    <h4 class="repo-name">{{repository['name']}}</h4>
+    <p *ngIf="repository.hasOwnProperty('description') && repository['description'] && repository['description'] !== ''">
+        {{repository['description']}}
+    </p>
+    <div *ngIf="repository.hasOwnProperty('topics') && repository['topics'] && repository['topics'].length > 0">
+        <ul class="topic-list">
+            <li class="topic" *ngFor="let topic of repository['topics']">
+                {{topic}}
+            </li>
+        </ul>
+    </div>
+</div>
