@@ -11,7 +11,8 @@ export class GitHomeComponent implements OnInit {
     userName = 'johnpapa';
     userData: any;
     repositories: any;
-
+    totalCollectionSize: number;
+    totalPages: number;
     page = 1;
     itemsPerPage = 10;
     reposURL = '';
@@ -29,6 +30,8 @@ export class GitHomeComponent implements OnInit {
                 this.userData = response;
                 if (this.userData && this.userData.hasOwnProperty('repos_url')) {
                     this.reposURL = this.userData['repos_url'];
+                    this.totalCollectionSize = this.userData['public_repos'];
+                    this.totalPages = Math.ceil(this.totalCollectionSize / this.itemsPerPage);
                     this.getRepositories(this.page, this.itemsPerPage);
                 }
             }
@@ -42,6 +45,11 @@ export class GitHomeComponent implements OnInit {
                 this.repositories = response;
             }
         });
+    }
+
+    getNewRepositoryData(event) {
+        this.repositories = null;
+        this.getRepositories(event, this.itemsPerPage);
     }
 
 }

@@ -9,6 +9,11 @@
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <app-repositories [repositories]="repositories"></app-repositories>
             </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <ngb-pagination [(page)]="page" [maxSize]="5"
+                                [collectionSize]="totalCollectionSize" [ellipses]="true" (pageChange)="getNewRepositoryData($event)"
+                                aria-label="Default pagination"></ngb-pagination>
+            </div>
         </div>
     </div>
 </div>

@@ -11,6 +11,7 @@ import {RepositoriesComponent} from './repositories/repositories.component';
 import {RepositoryComponent} from './repository/repository.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         BrowserAnimationsModule,
         RouterModule,
         HttpClientModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        NgbModule,
+        NgbPaginationModule
 
     ],
     providers: [HttpClientModule],
