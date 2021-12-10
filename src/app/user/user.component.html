@@ -1,0 +1,21 @@
+<div *ngIf="userData" class="user-profile">
+    <ul class="profile">
+        <li class="avatar-li">
+            <div class="avatar">
+                <div class="avatar-preview">
+                    <div id="imagePreview" [style.backgroundImage]="'url('+ avatarURL +')'">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="basic-info">
+                <p class="user-name">{{userData['name']}}</p>
+                <p>{{userData['bio']}}</p>
+                <p><span class="icon-spacing"><fa-icon [icon]="faMapMarker"></fa-icon></span><span>{{userData['location']}}</span></p>
+                <p *ngIf="userData.hasOwnProperty('twitter_username')"><span class="twitter-username">Twitter Username: </span>{{userData['twitter_username']}}</p>
+                <p><span class="icon-spacing"><fa-icon [icon]="faLink"></fa-icon></span><span>{{userData['html_url']}}</span></p>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,52 @@
+.avatar .avatar-preview {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 12px solid #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.avatar .avatar-preview>div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.avatar-li {
+  margin-right: 2rem;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.icon-spacing {
+  margin-right: 1rem;
+}
+
+.twitter-username {
+  //font-weight: bold;
+}
+
+.user-profile {
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid grey;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
