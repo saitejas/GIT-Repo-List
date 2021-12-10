@@ -14,9 +14,7 @@
                     <app-repositories [repositories]="repositories"></app-repositories>
                 </div>
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 justify-content-center-component">
-                    <ngb-pagination [(page)]="page" [maxSize]="5"
-                                    [collectionSize]="totalCollectionSize" [ellipses]="true" (pageChange)="getNewRepositoryData($event)"
-                                    aria-label="Default pagination"></ngb-pagination>
+                    <app-paginator [page]="page" [totalCollectionSize]="totalCollectionSize" (onPageChange)="getNewRepositoryData($event)"></app-paginator>
                 </div>
             </div>
             <div *ngIf="(!repositories || repoError !== '' || repositories.length === 0)">

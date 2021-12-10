@@ -1,0 +1,9 @@
+ngb-pagination ::ng-deep a {
+  color: #428bca !important;
+}
+
+ngb-pagination ::ng-deep .page-item.active .page-link {
+  border-color: #428bca;
+  background-color: #428bca;
+  color: white !important;
+}

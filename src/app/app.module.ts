@@ -16,6 +16,7 @@ import { NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoaderComponent } from './loader/loader.component';
 import { FormsModule } from '@angular/forms';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { SearchBoxComponent } from './search-box/search-box.component';
         RepositoriesComponent,
         RepositoryComponent,
         LoaderComponent,
-        SearchBoxComponent
+        SearchBoxComponent,
+        PaginatorComponent
     ],
     imports: [
         BrowserModule,
